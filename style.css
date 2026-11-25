@@ -218,8 +218,8 @@ button {
 .nav {
   align-items: center;
   display: flex;
-  gap: 2.2rem;
-  margin: 0 5.75rem 0 auto;
+  gap: 1.6rem;
+  margin: 0 2rem 0 auto;
 }
 
 .nav__link {
@@ -253,6 +253,19 @@ button {
 /* Botão "Agende seu horário" que aparece dentro do menu no celular */
 .nav__cta {
   display: none;
+}
+
+.header__system {
+  color: #fff;
+  font-size: 0.76rem;
+  height: 2.5625rem;
+  margin-right: 0.65rem;
+  padding: 0 1.1rem;
+}
+
+.header__system:hover {
+  background: var(--gold-button);
+  color: var(--ink);
 }
 
 .header__cta {
@@ -641,6 +654,17 @@ button {
   margin-top: 0.2rem;
 }
 
+.footer__system {
+  font-size: 0.85rem;
+  margin-top: 0.45rem;
+}
+
+.footer__system a {
+  color: var(--gold-logo);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .btn--xl {
   font-size: 0.9rem;
   font-weight: 600;
@@ -748,7 +772,8 @@ button {
     font-size: 1rem;
   }
 
-  .header__cta {
+  .header__cta,
+  .header__system {
     display: none;
   }
 

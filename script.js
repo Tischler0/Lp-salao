@@ -34,7 +34,7 @@ if (menuToggle && menu) {
 // 2. Destaca no menu a seção que está aparecendo na tela
 //    (a linha dourada embaixo do link acompanha a rolagem)
 // ---------------------------------------------------------------------------
-const linksDoMenu = document.querySelectorAll(".nav__link");
+const linksDoMenu = document.querySelectorAll('.nav__link[href^="#"]');
 const secoes = [...linksDoMenu]
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
